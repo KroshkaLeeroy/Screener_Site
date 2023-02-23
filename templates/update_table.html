@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Table</title>
+</head>
+<body>
+    <table>
+            <tr>
+                <th>Coin - USDT (Net TRC20)</th>
+                <th>Profit</th>
+                <th>Amount</th>
+                <th>Amount monets</th>
+                <th>Spread</th>
+                <th>Relevance/Sec</th>
+            </tr>
+            {% for coin in coins %}
+            <tr>
+                <td><a target="_blank" href="{{ coin.url }}">{{ coin.ticker }}</a></td>
+                <td style="background: {{ coin.color }}">{{ coin.max_profit }} $</td>
+                <td>{{ coin.pars[0].sum_profit }}$</td>
+                <td>{{ coin.pars[0].monets }}</td>
+                <td>{{ coin.max_spred }}</td>
+                <td>{{ coin.time }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+</body>
+</html>

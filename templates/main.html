@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Main_page</title>
+    <style>
+        table {
+            width: 100%; /* Ширина таблицы */
+            background: #000000; /* Цвет фона таблицы */
+            color: #000000; /* Цвет текста */
+            border-spacing: 1px; /* Расстояние между ячейками */
+        }
+
+        td, th {
+            background: #ffffff; /* Цвет фона ячеек */
+            padding: 5px; /* Поля вокруг текста */
+        }
+
+        body {
+            margin: 0; /* Убираем отступы */
+        }
+
+        .parent {
+            margin: 20%; /* Отступы вокруг элемента */
+            background: #fd0; /* Цвет фона */
+            padding: 5px; /* Поля вокруг текста */
+        }
+
+        .child {
+            border: 3px solid #666; /* Параметры рамки */
+            padding: 10px; /* Поля вокруг текста */
+            margin: 10px; /* Отступы вокруг */
+        }
+    </style>
+    <style type="text/css">
+        body {
+            font: 0.8em Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+            background: #D7E1F2; /* Цвет фона */
+            color: #ffe; /* Цвет текста */
+        }
+
+        a {
+            color: #008BCE; /* Цвет ссылок */
+        }
+
+        #container {
+            width: auto; /* Ширина макета */
+            height: auto; /* Высота макета */
+            margin: 0 auto; /* Выравниваем по центру */
+            background: #FCE600; /* Цвет колонок */
+        }
+
+        #header {
+            font-size: 2.2em; /* Размер текста */
+            text-align: center; /* Выравнивание по центру */
+            padding: 5px; /* Отступы вокруг текста */
+            background: #D71920; /* Цвет фона шапки */
+        }
+
+        #nav, #aside {
+            float: left;
+            width: 12%;
+            padding: 2%;
+        }
+
+        #content {
+            background: #54B948;
+            margin: 0 15%; /* Ширина колонок */
+            padding: 10px;
+        }
+
+        #aside {
+            float: right;
+            color: #000;
+        }
+
+        h2 {
+            margin: 0 0 1em;
+        }
+
+        #footer {
+            clear: both; /* Отменяем действие float */
+            padding: 5px; /* Отступы вокруг текста */
+            background: #D71920; /* Цвет фона подвала */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+                $.get("/update_table", function (data) {
+                    $("table").html(data);
+                });
+            }, 10000);
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="header">Скринер сравнивающий цену на Bybit и BestChange<br><hr>Price comparison screener for Bybit and BestChange</div>
+    <div id="nav">
+        <h3 style="color: black">Алгоритм действий
+        <p style="color: black">1) В момент когда одна из ячеек профита станет зеленой, перейти по ссылке тикера, откроется страница обменника.<br><br>
+        2) Ввести кошелек куда получить USDT, ввести количество монет (Amount monets) или USDT (Amount) для обмена, заполнить остальные поля по надобности.<br><br>
+        3) Выполнить запрос на обмен, дождаться кошелька на который переводить монету.<br><br>
+        4) На бирже купить монету в указанном количестве (Amount monets), перевести монету на кошелек обменника.<br><br>
+        5) Проверять профит (потраченно на покупку монеты - получено от обменника = профит).<br><br><hr></p>
+        <h3 style="color: black">Action algorithm</h3>
+        <p style="color: black">1) At the moment when one of the profit cells turns green, follow the ticker link, the page of the exchanger will open.<br><br>
+         2) Enter the wallet where to receive USDT, enter the number of coins (Amount coins) or USDT (Amount) for exchange, fill in the rest of the fields as needed.<br><br>
+         3) Run an exchange request, wait for the wallet to transfer the coin to.<br><br>
+         4) On the exchange, buy a coin in the specified amount (Amount coins), transfer the coin to the wallet of the exchanger.<br><br>
+         5) Check the profit (spent on the purchase of a coin - received from the exchanger = profit)</p>
+
+
+
+    </div>
+    <div id="aside">
+        <h3>Обновление таблицы происходит раз в 10 секунд.</h3>
+        <h3>Ячейка станет зеленой когда ее профит будет выше или равен 10$</h3>
+        <h3>Да, ячейка действительно бывает зеленой, нужно дождаться роста или падения цены на бирже</h3>
+        <h3>Номер карты, чтобы сказать спасибо:<br><br> 2200 7004 7805 5287</h3>
+        <hr>
+        <h3>The table is updated every 10 seconds.</h3>
+         <h3>The cell will turn green when its profit is greater than or equal to $10</h3>
+         <h3>Yes, the cell is indeed green, you need to wait for the price to rise or fall on the stock exchange</h3>
+         <h3>Card number to say thank you:<br><br> 2200 7004 7805 5287</h3>
+
+
+    </div>
+    <div id="content">
+<!--        <h2>Заглушка</h2>-->
+        <div class="parent">
+            <div class="child">
+                <table>
+                    <tr>
+                        <th>Coin - USDT (Net TRC20)</th>
+                        <th>Profit</th>
+                        <th>Amount</th>
+                        <th>Amount monets</th>
+                        <th>Spread</th>
+                        <th>Relevance/Sec</th>
+                    </tr>
+                    {% for coin in coins %}
+                    <tr>
+                        <td><a target="_blank" href="{{ coin.url }}">{{ coin.ticker }}</a></td>
+                        <td style="background: {{ coin.color }}">{{ coin.max_profit }} $</td>
+                        <td>{{ coin.pars[0].sum_profit }} $</td>
+                        <td>{{ coin.pars[0].monets }}</td>
+                        <td>{{ coin.max_spred }}</td>
+                        <td>{{ coin.time }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">&copy; MraK</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+id=168;pos_id=42;name=0x;ticker=ZRX;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=216;pos_id=61;name=Algorand;ticker=ALGO;wallet=WAXC25RZH6AN637F4LN4ECYSPREFMYUJCO5Y63HJMRD2IRUCTHG3SSUEAM;memo=0;network_name=ALGO
+id=217;pos_id=63;name=Avalanche;ticker=AVAX;wallet=X-avax1vzg57e4zl5talkk8fqqjfr6hx7wf8kvwdslvea;memo=0;network_name=XAVAX
+id=61;pos_id=48;name=BAT;ticker=BAT;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=19;pos_id=44;name=BinanceCoin BEP20;ticker=BNB;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=BSC
+id=172;pos_id=5;name=Bitcoin Cash;ticker=BCH;wallet=1MHBk67p5vuwRg2qCCbt83KG6ZWfC5FRG2;memo=0;network_name=BCH
+id=181;pos_id=36;name=Cardano;ticker=ADA;wallet=addr1vxjejmxuvkhvvw9hzs62clh79ulx38y0cg55tucxq3emg7qm0xdnf;memo=0;network_name=ADA
+id=197;pos_id=51;name=Chainlink;ticker=LINK;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=198;pos_id=52;name=Cosmos;ticker=ATOM;wallet=cosmos1ajll9jywwfkr2vulyedmwgp3l4sjp56rfljv6j;memo=0;network_name=ATOM
+id=203;pos_id=30;name=Dai;ticker=DAI;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=227;pos_id=65;name=Decentraland;ticker=MANA;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=115;pos_id=15;name=Dogecoin;ticker=DOGE;wallet=DQoQo2JwS8L8NqeQ934NP4GW5Z3u8tv5JR;memo=0;network_name=DOGE
+id=178;pos_id=34;name=EOS;ticker=EOS;wallet=bybitdeposit;memo=10266821;network_name=EOS
+id=160;pos_id=11;name=Ether Classic;ticker=ETC;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETC
+id=139;pos_id=8;name=Ethereum;ticker=ETH;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=104;pos_id=45;name=ICON;ticker=ICX;wallet=hx81fbad249d489386655fab0c3f481c688b1115d6;memo=0;network_name=ICX
+id=99;pos_id=12;name=Litecoin;ticker=LTC;wallet=Leo9T3ANftESU8XoBZwimwKvfgwxcZ4UyA;memo=0;network_name=LTC
+id=213;pos_id=62;name=Maker;ticker=MKR;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=76;pos_id=67;name=NEAR Protocol;ticker=NEAR;wallet=8db4a8f94f1b5de569bfb8e1c0356bb29572b0a52234bc0104c680d506877cb3;memo=0;network_name=NEAR
+id=173;pos_id=32;name=NEM;ticker=XEM;wallet=NCDZDXLTPSSHGWDGBWCNC67GDM7VU6ZQM4KJLXWZ;memo=10977284;network_name=NEM
+id=48;pos_id=40;name=OMG Network;ticker=OMG;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=201;pos_id=54;name=Polkadot;ticker=DOT;wallet=13y3q3DyhBE15JLuL8bbdYiyLGC1tQa8bEJ77QV58d1h5rQt;memo=0;network_name=DOT
+id=138;pos_id=16;name=Polygon;ticker=MATIC;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=26;pos_id=50;name=Qtum;ticker=QTUM;wallet=QNZZ4d8vMmaNDpqaL9jh1W8HbtZPfbGgW4;memo=0;network_name=QTUM
+id=205;pos_id=56;name=Ravencoin;ticker=RVN;wallet=RKhK5pFw6HcnVP5eV3JhNEjcwYSyNE2pLg;memo=0;network_name=RVN
+id=161;pos_id=13;name=Ripple;ticker=XRP;wallet=rJn2zAPdFA193sixJwuFixRkYDUtx3apQh;memo=10266821;network_name=XRP
+id=82;pos_id=57;name=Solana;ticker=SOL;wallet=H2TfukrPHn5WDxBvVECWi89rLG5sptuh8aB2kWccAz7q;memo=0;network_name=SOL
+id=2;pos_id=66;name=Terra;ticker=LUNA;wallet=terra1ggauxsrglwp5h3zukx9mwhlsj8w8ggt3gkquej;memo=0;network_name=LUNANEW
+id=182;pos_id=37;name=Stellar;ticker=XLM;wallet=GDT7ARDYZRBXXYOCSQ3MUMISTITSSRWZI6KR2A5L5Q3KB4QIZHGYMTIH;memo=11282118;network_name=XLM
+id=175;pos_id=53;name=Tezos;ticker=XTZ;wallet=tz1bPvkHTVQnSRc8QvxxJeq1SyXcpVq6odgw;memo=0;network_name=XTZ
+id=110;pos_id=25;name=USDCoin TRC20;ticker=USDC;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=202;pos_id=55;name=Uniswap;ticker=UNI;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=133;pos_id=39;name=Waves;ticker=WAVES;wallet=3PE6a1CXwYqRG3gqbhA7gDuHpV7niiexQoA;memo=0;network_name=WAVES
+id=220;pos_id=64;name=Yearn.finance;ticker=YFI;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=184;pos_id=7;name=Bitcoin Gold;ticker=BTG;wallet=GeyppNBVU8j6A7KsTYVntC8Sp1WLBd1i6B;memo=0;network_name=BTG
+id=185;pos_id=38;name=TRON;ticker=TRX;wallet=TGKSx2VwRSpGcjzSrsa8dcDeHsZWUkD7GZ;memo=0;network_name=TRX
+id=93;pos_id=1;name=Bitcoin;ticker=BTC;wallet=1GcfW77bvUSGfPhQQ87CexBxB7APAETESE;memo=0;network_name=BTC
+id=208;pos_id=22;name=Tether BEP20;ticker=USDT;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=BSC
+id=36;pos_id=20;name=Tether ERC20;ticker=USDT;wallet=0x3142ec3d149f935da00a435932686d86b13b3acd;memo=0;network_name=ETH
+id=10;pos_id=21;name=Tether TRC20;ticker=USDT;wallet=TGKSx2VwRSpGcjzSrsa8dcDeHsZWUkD7GZ;memo=0;network_name=TRX
