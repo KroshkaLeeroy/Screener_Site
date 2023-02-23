@@ -46,7 +46,7 @@ class Screener:
             return data
 
     def get_txt_exchangers(self):
-        with open('Txt_files/exchangers.txt', 'r') as file:
+        with open('Txt_files/exchangers.txt', 'r', errors='ignore') as file:
             text2 = file.readlines()
             data2 = []
             for line2 in text2:
